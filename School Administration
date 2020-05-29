@@ -1,0 +1,47 @@
+#Python program to calculate grade of a student...
+
+print("..Press X to exit...")
+Name = input("Enter your Name: ")
+print("Enter marks of 6 subjects: ")
+mark_1 = input()
+if mark_1 == 'x':
+    exit();
+else: 
+    mark_1 = int(mark_1)
+    mark_2 = int(input())
+    mark_3 = int(input())
+    mark_4 = int(input())
+    mark_5 = int(input())
+    mark_6 = int(input())
+    
+    total = mark_1 + mark_2 + mark_3 + mark_4 + mark_5 + mark_6
+    average = total/6
+    
+    if average in range(90, 100):
+        print(Name, " your grade is A+.")
+    elif average in range(80, 90):
+        print(Name, "your grade is A.")
+    elif average in range(70, 80):
+        print(Name, "your grade is B+.")
+    elif average in range(60, 70):
+        print(Name, "your grade is B.")
+    elif average in range(50, 60):
+        print(Name, "your grade is C+.")
+    elif average < 50:
+        print(Name, "your grade is F.")
+    else:
+        print(Name, "Your grade is not Available")
+        
+.......................................................................................................................................
+
+OUTPUT
+..Press X to exit...
+Enter your Name: Shishir
+Enter marks of 6 subjects: 
+30
+20
+40
+50
+30
+40
+Shishir your grade is F.
